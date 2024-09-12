@@ -11,4 +11,4 @@ jobs:
     steps:
       - name: Run the command
         run: |
-        ./command.sh --token "$PROD_TOKEN"
+          ./command.sh --token "$PROD_TOKEN"
