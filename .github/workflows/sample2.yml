@@ -9,5 +9,6 @@ jobs:
     env:
       PROD_TOKEN: ${{ secrets.PROD_TOKEN }}
     steps:
-      run: |
+      - name: Run the command
+        run: |
         ./command.sh --token "$PROD_TOKEN"
