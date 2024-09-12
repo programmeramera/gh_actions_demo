@@ -1,0 +1,13 @@
+name: sample2
+
+on:
+  pull_request_target:
+
+jobs:
+  run-command:
+    uses: ubuntu-latest
+    env:
+      PROD_TOKEN: ${{ secrets.PROD_TOKEN }}
+    steps:
+      run: |
+        ./command.sh --token "$PROD_TOKEN"
